@@ -1,8 +1,8 @@
 {
-  "name": "pnut-butter",
+  "name": "tavrn-butter",
   "version": "0.16.0",
-  "description": "pnut-butter.js – A modern, promise based wrapper library for the pnut.io API.",
-  "main": "dist/pnut.js",
+  "description": "tavrn-butter.js – A modern, promise based wrapper library for the tavrn.gg API.",
+  "main": "dist/tavrn.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha",
     "test:watch": "mocha -w -R min",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaiwood/pnut-butter.git"
+    "url": "git+https://github.com/Sapphio/tavrn-butter.git"
   },
   "author": {
     "name": "Kai Wood",
@@ -22,13 +22,13 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kaiwood/pnut-butter/issues",
+    "url": "https://github.com/Sapphio/tavrn-butter/issues",
     "email": "kwood@kwd.io"
   },
-  "homepage": "https://github.com/kaiwood/pnut-butter#readme",
+  "homepage": "https://github.com/Sapphio/tavrn-butter#readme",
   "keywords": [
-    "pnut",
-    "pnut.io",
+    "tavrn",
+    "tavrn.gg",
     "library",
     "api"
   ],
