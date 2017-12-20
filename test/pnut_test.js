@@ -4,10 +4,10 @@ const nock = require("nock");
 chai.use(chaiAsPromised);
 chai.should();
 
-const pnut = require("../lib/pnut");
+const tavrn = require("../lib/tavrn");
 
 before(function() {
-  let base = "https://api.pnut.io/v0";
+  let base = "https://api.sapphire.moe:7070/";
 
   nock(base).get("/somewhere").reply(200, {});
 
@@ -22,25 +22,25 @@ after(function() {
   nock.cleanAll();
 });
 
-describe("The pnut-butter library", () => {
+describe("The tavrn-butter library", () => {
   it("should be able to send a custom GET request", () => {
-    return pnut.custom("/somewhere").should.become({});
+    return tavrn.custom("/somewhere").should.become({});
   });
 
   it("should be able to send a custom POST request", () => {
-    return pnut.custom("/somewhere", "POST", {
+    return tavrn.custom("/somewhere", "POST", {
       text: "sometext"
     });
   });
 
   it("should be able to send a custom PUT request", () => {
-    return pnut.custom("/somewhere", "PUT", {
+    return tavrn.custom("/somewhere", "PUT", {
       text: "sometext"
     });
   });
 
   it("should be able to send a custom PATCH request", () => {
-    return pnut.custom("/somewhere", "PATCH", {
+    return tavrn.custom("/somewhere", "PATCH", {
       text: "sometext"
     });
   });
